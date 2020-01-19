@@ -5,6 +5,10 @@
   "scripts": {
     "build": "cross-env NODE_ENV=production webpack"
   },
+  "dependencies": {
+    "naja": "^1.7.0",
+    "nette-forms": "^3.0.3"
+  },
   "devDependencies": {
     "cross-env": "^6.0.3",
     "webpack": "^4.41.5",
