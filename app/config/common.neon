@@ -13,3 +13,15 @@ session:
 
 services:
 	router: App\Router\RouterFactory::createRouter
+
+
+extensions:
+    webpack: Oops\WebpackNetteAdapter\DI\WebpackExtension(%debugMode%, %consoleMode%)
+
+webpack:
+    build:
+        directory: %wwwDir%/assets
+        publicPath: assets/
+    devServer:
+        enabled: %debugMode%
+        url: http://localhost:8080/assets
