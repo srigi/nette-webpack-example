@@ -1,0 +1,13 @@
+{
+  "name": "nette-webpack-example",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "cross-env NODE_ENV=production webpack"
+  },
+  "devDependencies": {
+    "cross-env": "^6.0.3",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10"
+  }
+}
