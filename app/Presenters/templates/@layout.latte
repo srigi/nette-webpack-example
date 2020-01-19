@@ -8,11 +8,15 @@
 </head>
 
 <body>
+	{snippet flashes}
 	<div n:foreach="$flashes as $flash" n:class="flash, $flash->type">{$flash->message}</div>
+	{/snippet}
 
 	{include content}
 
 	{block scripts}
+	<script src="{$basePath}/js/lib/Naja.js"></script>
+	<script src="{$basePath}/js/app.js"></script>
 	{/block}
 </body>
 </html>
